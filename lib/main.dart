@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shoes_ecommerce/config/thems/app_colors.dart';
+import 'package:shoes_ecommerce/features/forget_password/view/forget_password_screen.dart';
+import 'package:shoes_ecommerce/features/signup/view/signup_screen.dart';
 import 'package:shoes_ecommerce/features/splash/splash_screen.dart';
 
 import 'config/routing/routes.dart';
@@ -30,6 +32,12 @@ class MyApp extends StatelessWidget {
         },
         Routes.signIn: (context) {
           return const SignInScreen();
+        },
+        Routes.signUp: (context) {
+          return const SignupScreen();
+        },
+        Routes.forgetPassword: (context) {
+          return const ForgetPassword();
         },
       },
     );
